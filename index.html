@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <title>أحمد رابح القرشي — مطور واجهات وتجربة مستخدم</title>
-  <meta name="description" content="مطور واجهات متخصص في بناء تجارب رقمية عصرية وسهلة الاستخدام، مع التركيز على متاجر سلة." />
+  <title>أحمد رابح القرشي — مطور واجهات وتجارب رقمية</title>
+  <meta name="description" content="أحمد رابح القرشي، مطور واجهات وتجارب مستخدم يركز على بناء متاجر سلة وتجارب رقمية حديثة وسلسة تساعد العلامات التجارية على النمو." />
   <meta name="theme-color" content="#0A0F19"/>
 
   <!-- Fonts & Icons -->
@@ -14,7 +14,7 @@
   <script src="https://unpkg.com/feather-icons"></script>
 
   <style>
-    /* ===================== Design System & Tokens (Dark Theme First) ===================== */
+    /* نفس التنسيقات الأصلية بدون تعديل */
     :root{
       --bg-main: #0A0F19; --bg-card: #101522; --text-main: #E9EEF6; --text-muted: #9FB0C1;
       --border-color: rgba(137, 155, 201, 0.15);
@@ -89,13 +89,13 @@
     @media (max-width: 992px){ .focus-grid { grid-template-columns: 1fr 1fr; } .project-showcase-card, .cta-card { grid-column: span 2; } .tech-card, .code-card { grid-column: span 1; } }
     @media (max-width: 640px){ .focus-grid { grid-template-columns: 1fr; } .bento-card, .tech-card, .project-showcase-card, .code-card, .cta-card { grid-column: span 1 !important; grid-row: auto !important; } }
 
-    /* ===================== Portfolio Slider Section (Restored & Integrated) ===================== */
+    /* Portfolio Slider Section */
     .pf-gallery {
       --pf-ink:#EAF0FF; --pf-muted:#A8B2C6; --pf-card:#0F1627; --pf-gold1:#EAD8B0; --pf-gold2:#CDA361;
       --pf-radius:8px; --pf-gap:20px; --pf-speed:66;
       --pf-shadow:0 18px 46px rgba(0,0,0,.38);
       color:var(--pf-ink);
-      background-color: transparent; /* Use main section background */
+      background-color: transparent;
     }
     .pf-railWrap { margin-top: clamp(16px, 3.2vw, 22px); position: relative; overflow: hidden; }
     .pf-railWrap:focus-visible { outline: 2px solid var(--pf-gold1); outline-offset: 4px }
@@ -164,7 +164,11 @@
     <div class="container navbar">
       <div class="brand"><span class="brand-mark"></span> أحمد القرشي</div>
       <nav class="main-nav" id="mainMenu">
-        <a href="#about">نبذة</a> <a href="#focus">التركيز</a> <a href="#portfolio">الأعمال</a> <a href="#journey">الرحلة</a> <a href="#contact">تواصل</a>
+        <a href="#about">من أنا</a>
+        <a href="#focus">المهارات</a>
+        <a href="#portfolio">الأعمال</a>
+        <a href="#journey">المسار</a>
+        <a href="#contact">تواصل</a>
       </nav>
     </div>
   </header>
@@ -172,75 +176,221 @@
   <main id="main" role="main">
     <section id="hero">
       <div class="container hero-content" data-animate>
-          <p class="subtitle">أحمد رابح القرشي</p>
-          <h1>مطور واجهات يصنع تجارب رقمية مؤثرة.</h1>
-          <p style="max-width:600px; margin-inline:auto; font-size:1.15rem; color:var(--text-muted); line-height:1.8;">أصمم وأطور واجهات سريعة وتفاعلية، مع شغف خاص بتحويل الأفكار المعقدة إلى حلول بسيطة وأنيقة.</p>
+          <p class="subtitle">أحمد رابح القرشي • مطور واجهات</p>
+          <h1>أبني واجهات عصرية تمنح مشروعك حضورًا رقميًا قويًا.</h1>
+          <p style="max-width:600px; margin-inline:auto; font-size:1.15rem; color:var(--text-muted); line-height:1.8;">
+            أعمل على تصميم وتطوير واجهات تفاعلية وسريعة الاستجابة، مع تركيز على التفاصيل الصغيرة التي تصنع تجربة استخدام مريحة وواضحة لعملائك.
+          </p>
           <div class="cta-group">
-              <a href="#portfolio" class="btn primary"><i data-feather="eye"></i> استعراض أعمالي</a>
-              <a href="#contact" class="btn"><i data-feather="send"></i> تواصل معي</a>
+              <a href="#portfolio" class="btn primary"><i data-feather="eye"></i> مشاهدة نماذج من أعمالي</a>
+              <a href="#contact" class="btn"><i data-feather="send"></i> احجز جلسة نقاش لمشروعك</a>
           </div>
       </div>
     </section>
 
     <section id="about" class="section">
       <div class="container about-wrap" data-animate>
-          <div class="avatar-container"><img class="avatar" src="https://ibtikartech.co/media/hero/1000061061.png" alt="صورة أحمد الشخصية"></div>
+          <div class="avatar-container">
+            <img class="avatar" src="https://ibtikartech.co/media/hero/1000061061.png" alt="صورة أحمد الشخصية">
+          </div>
           <div class="about-text">
-              <h2 style="font-size: clamp(1.6rem, 3vw, 2.2rem); margin-top:0;">من أنا؟</h2>
-              <p style="font-size: 1.1rem; line-height: 1.9; color: var(--text-muted);">مطور واجهات أجمع بين عين المصمم وعقل المبرمج. أركز على كتابة كود نظيف، وبناء مكونات قابلة لإعادة الاستخدام. <strong style="display:block; margin-top:1rem; color:var(--text-main);">خبرتي تتركز في تخصيص وتطوير متاجر سلة (Salla) لتعزيز تجربة الشراء.</strong></p>
+              <h2 style="font-size: clamp(1.6rem, 3vw, 2.2rem); margin-top:0;">تعريف بسيط عني</h2>
+              <p style="font-size: 1.1rem; line-height: 1.9; color: var(--text-muted);">
+                أنا مطور واجهات مستخدم أعمل عند نقطة التقاء التصميم والبرمجة. أهتم ببناء هياكل واضحة للكود، واعتماد مكونات قابلة لإعادة الاستخدام
+                تسهّل تطوير المنصات وتوسّعها مستقبلًا.
+                <strong style="display:block; margin-top:1rem; color:var(--text-main);">
+                  أركز بشكل خاص على تخصيص وتطوير متاجر سلة (Salla)، وتحسين تجربة الشراء من أول زيارة وحتى إتمام الطلب.
+                </strong>
+              </p>
           </div>
       </div>
     </section>
 
     <section id="focus" class="section">
       <div class="container">
-          <h2 class="section-title" data-animate><span class="subtitle">الخبرات الأساسية</span>التقنيات ومجالات التركيز</h2>
+          <h2 class="section-title" data-animate>
+            <span class="subtitle">نقاط القوة التقنية</span>
+            ما الذي أقدمه فعليًا؟
+          </h2>
           <div class="focus-grid">
               <div class="bento-card tech-card" data-animate>
-                  <div class="card-content"><p class="card-subtitle">مستمر في التعلم</p><h3 class="card-title">التقنيات التي أحترفها!</h3></div>
+                  <div class="card-content">
+                    <p class="card-subtitle">تعلّم مستمر وتطوير ذاتي</p>
+                    <h3 class="card-title">أدواتي اليومية في العمل</h3>
+                  </div>
                   <div class="tech-pills">
-                      <span class="tech-pill"><img src="https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg" alt="React"><span>React.JS</span></span>
-                      <span class="tech-pill"><img src="https://www.vectorlogo.zone/logos/nextjs/nextjs-icon.svg" alt="Next.js"><span>Next.js</span></span>
-                      <span class="tech-pill"><img src="https://www.vectorlogo.zone/logos/javascript/javascript-icon.svg" alt="JavaScript"><span>JavaScript</span></span>
-                      <span class="tech-pill"><img src="https://www.vectorlogo.zone/logos/typescriptlang/typescriptlang-icon.svg" alt="TypeScript"><span>TypeScript</span></span>
-                      <span class="tech-pill"><img src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg" alt="HTML5"><span>HTML5</span></span>
-                      <span class="tech-pill"><img src="https://www.vectorlogo.zone/logos/w3_css3/w3_css3-icon.svg" alt="CSS3"><span>CSS3</span></span>
-                      <span class="tech-pill"><img src="https://www.vectorlogo.zone/logos/nodejs/nodejs-icon.svg" alt="Node.js"><span>Node.js</span></span>
-                      <span class="tech-pill"><img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="Figma"><span>Figma</span></span>
+                      <span class="tech-pill">
+                        <img src="https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg" alt="React">
+                        <span>React.JS</span>
+                      </span>
+                      <span class="tech-pill">
+                        <img src="https://www.vectorlogo.zone/logos/nextjs/nextjs-icon.svg" alt="Next.js">
+                        <span>Next.js</span>
+                      </span>
+                      <span class="tech-pill">
+                        <img src="https://www.vectorlogo.zone/logos/javascript/javascript-icon.svg" alt="JavaScript">
+                        <span>JavaScript</span>
+                      </span>
+                      <span class="tech-pill">
+                        <img src="https://www.vectorlogo.zone/logos/typescriptlang/typescriptlang-icon.svg" alt="TypeScript">
+                        <span>TypeScript</span>
+                      </span>
+                      <span class="tech-pill">
+                        <img src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg" alt="HTML5">
+                        <span>HTML5</span>
+                      </span>
+                      <span class="tech-pill">
+                        <img src="https://www.vectorlogo.zone/logos/w3_css3/w3_css3-icon.svg" alt="CSS3">
+                        <span>CSS3</span>
+                      </span>
+                      <span class="tech-pill">
+                        <img src="https://www.vectorlogo.zone/logos/nodejs/nodejs-icon.svg" alt="Node.js">
+                        <span>Node.js</span>
+                      </span>
+                      <span class="tech-pill">
+                        <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="Figma">
+                        <span>Figma</span>
+                      </span>
                   </div>
               </div>
-              <div class="bento-card project-showcase-card" data-animate><img src="https://quarizm.tech/storage/676/compressed_Web-and-website-development.jpeg" alt="Laptop showing a website"><h3 class="card-title">أولويتي هي التعاون مع العملاء، وتعزيز التواصل المفتوح.</h3></div>
-              <div class="bento-card code-card" data-animate><div class="card-content"><p class="card-subtitle">في المجال</p><h3 class="card-title">متخصص في تطوير متاجر إلكترونية متكاملة.</h3><div class="code-snippet"><pre><code><span class="comment">// Clean, reusable components</span>
+
+              <div class="bento-card project-showcase-card" data-animate>
+                <img src="https://quarizm.tech/storage/676/compressed_Web-and-website-development.jpeg" alt="Laptop showing a website">
+                <h3 class="card-title">
+                  أؤمن أن أفضل المشاريع تُبنى على تواصل واضح، وتعاون مستمر مع العميل في كل مرحلة.
+                </h3>
+              </div>
+
+              <div class="bento-card code-card" data-animate>
+                <div class="card-content">
+                  <p class="card-subtitle">خبرة في المتاجر الإلكترونية</p>
+                  <h3 class="card-title">أبني متاجر متكاملة تُركّز على المبيعات وتجربة المستخدم.</h3>
+                  <div class="code-snippet">
+<pre><code><span class="comment">// مكونات نظيفة وقابلة لإعادة الاستخدام</span>
 <span class="keyword">const</span> ProductCard = ({ product }) => (
   <span class="string">&lt;div className="product"&gt;...&lt;/div&gt;</span>
-);</code></pre></div></div></div>
-              <div class="bento-card cta-card" data-animate><h4 class="card-title">هل ترغب في أن نبدأ مشروع معًا؟</h4><a href="#contact" class="btn"><i data-feather="arrow-left"></i> لنبدأ الحديث</a></div>
+);</code></pre>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bento-card cta-card" data-animate>
+                <h4 class="card-title">لديك فكرة متجر أو منصة وتبحث عمّن ينفّذها باحتراف؟</h4>
+                <a href="#contact" class="btn">
+                  <i data-feather="arrow-left"></i>
+                  لنحوّل الفكرة إلى منتج فعلي
+                </a>
+              </div>
           </div>
       </div>
     </section>
     
     <section id="portfolio" class="section pf-gallery" aria-labelledby="pf-gallery-title">
       <div class="container" data-animate>
-          <h2 class="section-title"><span class="subtitle">معرض الأعمال</span>أحدث المشاريع</h2>
+          <h2 class="section-title">
+            <span class="subtitle">نماذج مختارة</span>
+            أعمال تم تنفيذها لعملاء حقيقيين
+          </h2>
           <div class="pf-railWrap" role="region" aria-roledescription="سلايدر أعمال" tabindex="0">
-              <div class="pf-rail"><div class="pf-seq">
-                  <article class="pf-card" data-badge="Salla"><a class="pf-screen"><img alt="عيادات لاكجري بيوتي" loading="lazy" src="https://ibtikartech.co/media/portfolio/%D8%B9%D9%8A%D8%A7%D8%AF%D8%A7%D8%AA-%D9%84%D8%A7%D9%83%D8%AC%D8%B1%D9%8A-%D8%A8%D9%8A%D9%88%D8%AA%D9%8A/1000131105.jpg"><span class="pf-badge"></span><div class="pf-vscroll"><span class="pf-vthumb"></span></div><span class="pf-title-sm">عيادات لاكجري بيوتي</span></a></article>
-                  <article class="pf-card" data-badge="Salla"><a class="pf-screen"><img alt="متجر الذواقة" loading="lazy" src="https://ibtikartech.co/media/portfolio/%D9%85%D8%AA%D8%AC%D8%B1-%D8%A7%D9%84%D8%B0%D9%88%D8%A7%D9%82%D8%A9/1000131105.jpg"><span class="pf-badge"></span><div class="pf-vscroll"><span class="pf-vthumb"></span></div><span class="pf-title-sm">متجر الذواقة</span></a></article>
-                  <article class="pf-card" data-badge="Web"><a class="pf-screen"><img alt="موقع اهتمام للاتصالات" loading="lazy" src="https://ibtikartech.co/media/portfolio/%D9%85%D9%88%D9%82%D8%B9-%D8%A7%D9%87%D8%AA%D9%85%D8%A7%D9%85-%D9%84%D9%84%D8%A7%D8%AA%D8%B5%D8%A7%D9%84%D8%A7%D8%AA/1000130418.jpg"><span class="pf-badge"></span><div class="pf-vscroll"><span class="pf-vthumb"></span></div><span class="pf-title-sm">موقع اهتمام للاتصالات</span></a></article>
-                  <article class="pf-card" data-badge="Salla"><a class="pf-screen"><img alt="متجر عام" loading="lazy" src="https://ibtikartech.co/media/portfolio/%D9%85%D8%AA%D8%AC%D8%B1/1000130977.jpg"><span class="pf-badge"></span><div class="pf-vscroll"><span class="pf-vthumb"></span></div><span class="pf-title-sm">متجر عام</span></a></article>
-                  <article class="pf-card" data-badge="Salla"><a class="pf-screen"><img alt="متجر بينون" loading="lazy" src="https://ibtikartech.co/media/portfolio/%D9%85%D8%AA%D8%AC%D8%B1-%D8%A8%D9%8A%D9%86%D9%88%D9%86/1000131105.jpg"><span class="pf-badge"></span><div class="pf-vscroll"><span class="pf-vthumb"></span></div><span class="pf-title-sm">متجر بينون</span></a></article>
-              </div><div class="pf-seq pf-seqClone"></div></div>
-              <div class="pf-pause-indicator"><svg viewBox="0 0 24 24"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"></path></svg></div>
+              <div class="pf-rail">
+                <div class="pf-seq">
+                  <article class="pf-card" data-badge="Salla">
+                    <a class="pf-screen">
+                      <img alt="عيادات لاكجري بيوتي" loading="lazy" src="https://ibtikartech.co/media/portfolio/%D8%B9%D9%8A%D8%A7%D8%AF%D8%A7%D8%AA-%D9%84%D8%A7%D9%83%D8%AC%D8%B1%D9%8A-%D8%A8%D9%8A%D9%88%D8%AA%D9%8A/1000131105.jpg">
+                      <span class="pf-badge"></span>
+                      <div class="pf-vscroll"><span class="pf-vthumb"></span></div>
+                      <span class="pf-title-sm">عيادات لاكجري بيوتي</span>
+                    </a>
+                  </article>
+                  <article class="pf-card" data-badge="Salla">
+                    <a class="pf-screen">
+                      <img alt="متجر الذواقة" loading="lazy" src="https://ibtikartech.co/media/portfolio/%D9%85%D8%AA%D8%AC%D8%B1-%D8%A7%D9%84%D8%B0%D9%88%D8%A7%D9%82%D8%A9/1000131105.jpg">
+                      <span class="pf-badge"></span>
+                      <div class="pf-vscroll"><span class="pf-vthumb"></span></div>
+                      <span class="pf-title-sm">متجر الذواقة</span>
+                    </a>
+                  </article>
+                  <article class="pf-card" data-badge="Web">
+                    <a class="pf-screen">
+                      <img alt="موقع اهتمام للاتصالات" loading="lazy" src="https://ibtikartech.co/media/portfolio/%D9%85%D9%88%D9%82%D8%B9-%D8%A7%D9%87%D8%AA%D9%85%D8%A7%D9%85-%D9%84%D9%84%D8%A7%D8%AA%D8%B5%D8%A7%D9%84%D8%A7%D8%AA/1000130418.jpg">
+                      <span class="pf-badge"></span>
+                      <div class="pf-vscroll"><span class="pf-vthumb"></span></div>
+                      <span class="pf-title-sm">موقع اهتمام للاتصالات</span>
+                    </a>
+                  </article>
+                  <article class="pf-card" data-badge="Salla">
+                    <a class="pf-screen">
+                      <img alt="متجر عام" loading="lazy" src="https://ibtikartech.co/media/portfolio/%D9%85%D8%AA%D8%AC%D8%B1/1000130977.jpg">
+                      <span class="pf-badge"></span>
+                      <div class="pf-vscroll"><span class="pf-vthumb"></span></div>
+                      <span class="pf-title-sm">متجر عام</span>
+                    </a>
+                  </article>
+                  <article class="pf-card" data-badge="Salla">
+                    <a class="pf-screen">
+                      <img alt="متجر بينون" loading="lazy" src="https://ibtikartech.co/media/portfolio/%D9%85%D8%AA%D8%AC%D8%B1-%D8%A8%D9%8A%D9%86%D9%88%D9%86/1000131105.jpg">
+                      <span class="pf-badge"></span>
+                      <div class="pf-vscroll"><span class="pf-vthumb"></span></div>
+                      <span class="pf-title-sm">متجر بينون</span>
+                    </a>
+                  </article>
+              </div>
+              <div class="pf-seq pf-seqClone"></div>
+            </div>
+            <div class="pf-pause-indicator">
+              <svg viewBox="0 0 24 24">
+                <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"></path>
+              </svg>
+            </div>
           </div>
       </div>
     </section>
 
     <section id="journey" class="section">
         <div class="container">
-            <h2 class="section-title" data-animate><span class="subtitle">الأساس المعرفي</span>رحلة التعلم والخبرة</h2>
+            <h2 class="section-title" data-animate>
+              <span class="subtitle">المسار التعليمي والمهني</span>
+              كيف بُنيت خبرتي في تطوير الويب؟
+            </h2>
             <div class="journey-grid">
-                <div class="journey-card" data-animate><div class="journey-card-title"><i data-feather="award" style="color:var(--brand-purple);"></i> منصة سطر</div><div class="entry"><h4>مسار Full-Stack JavaScript</h4><p>تغطية شاملة لأساسيات الويب، من HTML/CSS إلى بناء تطبيقات متكاملة باستخدام React و Node.js.</p></div><div class="entry"><h4>مسار تصميم الواجهات (UI/UX)</h4><p>تعمقت في رحلة المستخدم، من البحث إلى تصميم نماذج أولية تفاعلية باستخدام Figma.</p></div></div>
-                <div class="journey-card" data-animate><div class="journey-card-title"><i data-feather="book-open" style="color:var(--brand-cyan);"></i> منصة إدراك</div><div class="entry"><h4>مبادئ وتصميم الـ UI/UX</h4><p>بناء أساس قوي في مبادئ التصميم التفاعلي، أبحاث المستخدم، وهندسة المعلومات.</p></div><div class="entry"><h4>مساقات إضافية</h4><p>متابعة مستمرة لكل ما هو جديد في عالم تطوير الويب، بما في ذلك تحسين الأداء وإمكانية الوصول.</p></div></div>
+                <div class="journey-card" data-animate>
+                  <div class="journey-card-title">
+                    <i data-feather="award" style="color:var(--brand-purple);"></i>
+                    منصة سطر
+                  </div>
+                  <div class="entry">
+                    <h4>مسار Full-Stack JavaScript</h4>
+                    <p>
+                      تعلّمت من خلاله أساسيات بناء الويب من الصفر؛ بدايةً من HTML وCSS، مرورًا بجافاسكربت، ووصولًا إلى تطوير تطبيقات متكاملة
+                      باستخدام React وNode.js.
+                    </p>
+                  </div>
+                  <div class="entry">
+                    <h4>مسار تصميم واجهات المستخدم (UI/UX)</h4>
+                    <p>
+                      فهم عميق لرحلة المستخدم، من مرحلة البحث وتحليل الاحتياجات إلى تصميم نماذج أولية تفاعلية على Figma وتجربتها مع المستخدمين.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="journey-card" data-animate>
+                  <div class="journey-card-title">
+                    <i data-feather="book-open" style="color:var(--brand-cyan);"></i>
+                    منصة إدراك
+                  </div>
+                  <div class="entry">
+                    <h4>مبادئ وتصميم الـ UI/UX</h4>
+                    <p>
+                      بناء قاعدة متينة في مبادئ التصميم التفاعلي، التسلسل البصري، وإخراج واجهات متوازنة تجمع بين الجمال والوضوح الوظيفي.
+                    </p>
+                  </div>
+                  <div class="entry">
+                    <h4>مساقات إضافية وتعلّم مستمر</h4>
+                    <p>
+                      متابعة دورات قصيرة ومتخصصة في تحسين الأداء، وإمكانية الوصول (Accessibility)، وأحدث التوجهات في تطوير واجهات الويب.
+                    </p>
+                  </div>
+                </div>
             </div>
         </div>
     </section>
@@ -250,9 +400,14 @@
     <div class="final-cta">
         <div class="container">
             <div class="cta-content" data-animate>
-                <h2>هل أنت مستعد لأخذ وجودك الرقمي إلى المستوى التالي؟</h2>
-                <p>تواصل معي اليوم ودعنا نناقش كيف يمكنني مساعدتك في تحقيق أهدافك.</p>
-                <a href="mailto:ahmed.r.qurashi@example.com" class="btn cta-btn">تواصل معي للبدء!<i data-feather="arrow-left"></i></a>
+                <h2>لنمنح مشروعك حضورًا رقميًا يليق به.</h2>
+                <p>
+                  إن كنت تخطط لإطلاق متجر إلكتروني أو تطوير واجهة منصة قائمة، يمكننا معًا تصميم تجربة استخدام تجعل عملاءك يفضلونك عن الآخرين.
+                </p>
+                <a href="mailto:ahmed.r.qurashi@example.com" class="btn cta-btn">
+                  تواصل معي وابدأ خطوة التنفيذ الأولى
+                  <i data-feather="arrow-left"></i>
+                </a>
             </div>
             <div class="footer-bottom" data-animate>
                 <div class="socials">
@@ -260,60 +415,157 @@
                     <a href="#" aria-label="Twitter"><i data-feather="twitter"></i></a>
                     <a href="#" aria-label="GitHub"><i data-feather="github"></i></a>
                 </div>
-                <p class="copyright">© <span id="year"></span> أحمد رابح القرشي</p>
+                <p class="copyright">
+                  © <span id="year"></span> أحمد رابح القرشي — جميع الحقوق محفوظة
+                </p>
             </div>
         </div>
     </div>
   </footer>
   
-  <button class="chat-fab" aria-label="بدء المحادثة"><i data-feather="message-square"></i><span class="notification-badge">1</span></button>
+  <button class="chat-fab" aria-label="بدء محادثة مع أحمد">
+    <i data-feather="message-square"></i>
+    <span class="notification-badge">1</span>
+  </button>
 
   <script>
     document.addEventListener('DOMContentLoaded', () => {
         feather.replace();
-        if(document.getElementById('year')) { document.getElementById('year').textContent = new Date().getFullYear(); }
-        const observer = new IntersectionObserver(e=>{e.forEach(i=>{if(i.isIntersecting){i.target.classList.add('in-view');observer.unobserve(i.target)}})},{threshold:0.1});
-        document.querySelectorAll('[data-animate]').forEach(el=>observer.observe(el));
-        const applyGlow = (c,s)=>{let con=document.querySelector(c);if(con){(s?con.querySelectorAll(s):[con]).forEach(card=>{card.addEventListener('mousemove',e=>{let r=card.getBoundingClientRect();card.style.setProperty('--x',`${e.clientX-r.left}px`);card.style.setProperty('--y',`${e.clientY-r.top}px`)})})}};
-        applyGlow('#hero'); applyGlow('.focus-grid','.bento-card'); applyGlow('.journey-grid','.journey-card');
+        if(document.getElementById('year')) {
+          document.getElementById('year').textContent = new Date().getFullYear();
+        }
 
-        // Original Portfolio Slider Script
+        const observer = new IntersectionObserver(e=>{
+          e.forEach(i=>{
+            if(i.isIntersecting){
+              i.target.classList.add('in-view');
+              observer.unobserve(i.target)
+            }
+          })
+        },{threshold:0.1});
+        document.querySelectorAll('[data-animate]').forEach(el=>observer.observe(el));
+
+        const applyGlow = (c,s)=>{
+          let con=document.querySelector(c);
+          if(con){
+            (s?con.querySelectorAll(s):[con]).forEach(card=>{
+              card.addEventListener('mousemove',e=>{
+                let r=card.getBoundingClientRect();
+                card.style.setProperty('--x',`${e.clientX-r.left}px`);
+                card.style.setProperty('--y',`${e.clientY-r.top}px`)
+              })
+            })
+          }
+        };
+        applyGlow('#hero');
+        applyGlow('.focus-grid','.bento-card');
+        applyGlow('.journey-grid','.journey-card');
+
+        // Portfolio Slider Script
         document.querySelectorAll('.pf-gallery').forEach(initPortfolio);
         function initPortfolio(root) {
-            const railWrap=root.querySelector('.pf-railWrap'), rail=root.querySelector('.pf-rail'), seq=root.querySelector('.pf-seq'), seqClone=root.querySelector('.pf-seqClone');
+            const railWrap=root.querySelector('.pf-railWrap'),
+                  rail=root.querySelector('.pf-rail'),
+                  seq=root.querySelector('.pf-seq'),
+                  seqClone=root.querySelector('.pf-seqClone');
             if (!railWrap||!rail||!seq||!seqClone) return;
             const isRTL = getComputedStyle(root).direction === 'rtl';
             const prefersReduce = window.matchMedia('(prefers-reduced-motion:reduce)').matches;
             
-            function setupCards(container){container.querySelectorAll('.pf-card').forEach(card=>{const badge=card.querySelector('.pf-badge');if(badge&&card.dataset.badge){badge.textContent=card.dataset.badge}})}
-            function ensureOverflow(){let gap=20,viewW=railWrap.clientWidth||1200;const totalW=c=>[...c.children].reduce((s,el)=>s+el.getBoundingClientRect().width,0)+(c.children.length-1)*gap;let i=0;while(totalW(seq)<viewW*1.5&&i<10){seq.insertAdjacentHTML('beforeend',seq.innerHTML);i++}setupCards(seq)}
-            ensureOverflow();seqClone.innerHTML=seq.innerHTML;setupCards(seqClone);
+            function setupCards(container){
+              container.querySelectorAll('.pf-card').forEach(card=>{
+                const badge=card.querySelector('.pf-badge');
+                if(badge&&card.dataset.badge){badge.textContent=card.dataset.badge}
+              })
+            }
+            function ensureOverflow(){
+              let gap=20,viewW=railWrap.clientWidth||1200;
+              const totalW=c=>[...c.children].reduce((s,el)=>s+el.getBoundingClientRect().width,0)+(c.children.length-1)*gap;
+              let i=0;
+              while(totalW(seq)<viewW*1.5&&i<10){
+                seq.insertAdjacentHTML('beforeend',seq.innerHTML);
+                i++
+              }
+              setupCards(seq)
+            }
+            ensureOverflow();
+            seqClone.innerHTML=seq.innerHTML;
+            setupCards(seqClone);
             
             let offset=0,lastTs=0,seqW=0,pausedByUser=false;
-            function measure(){const gap=20;seqW=[...seq.children].reduce((s,el)=>s+el.getBoundingClientRect().width,0)+(seq.children.length-1)*gap}
-            measure(); new ResizeObserver(measure).observe(railWrap);
+            function measure(){
+              const gap=20;
+              seqW=[...seq.children].reduce((s,el)=>s+el.getBoundingClientRect().width,0)+(seq.children.length-1)*gap
+            }
+            measure();
+            new ResizeObserver(measure).observe(railWrap);
             const pxPerSec=()=>66;
-            function tick(ts){if(!lastTs)lastTs=ts;const dt=(ts-lastTs)/1000;lastTs=ts;if(!prefersReduce&&!pausedByUser&&seqW>0){const dir=isRTL?-1:1;offset+=dir*pxPerSec()*dt;if(Math.abs(offset)>=seqW)offset%=seqW;rail.style.transform=`translateX(${-offset}px) translateZ(0)`}requestAnimationFrame(tick)}requestAnimationFrame(tick);
-            function setPausedState(paused){pausedByUser=paused;railWrap.classList.toggle('is-paused',paused)}
-            railWrap.addEventListener('pointerenter',()=>setPausedState(true));railWrap.addEventListener('pointerleave',()=>setPausedState(false));
+            function tick(ts){
+              if(!lastTs)lastTs=ts;
+              const dt=(ts-lastTs)/1000;
+              lastTs=ts;
+              if(!prefersReduce&&!pausedByUser&&seqW>0){
+                const dir=isRTL?-1:1;
+                offset+=dir*pxPerSec()*dt;
+                if(Math.abs(offset)>=seqW)offset%=seqW;
+                rail.style.transform=`translateX(${-offset}px) translateZ(0)`
+              }
+              requestAnimationFrame(tick)
+            }
+            requestAnimationFrame(tick);
+            function setPausedState(paused){
+              pausedByUser=paused;
+              railWrap.classList.toggle('is-paused',paused)
+            }
+            railWrap.addEventListener('pointerenter',()=>setPausedState(true));
+            railWrap.addEventListener('pointerleave',()=>setPausedState(false));
 
             seq.querySelectorAll('.pf-card').forEach(card => {
-                const screen=card.querySelector('.pf-screen'), img=screen.querySelector('img'), vthumb=screen.querySelector('.pf-vthumb');
+                const screen=card.querySelector('.pf-screen'),
+                      img=screen.querySelector('img'),
+                      vthumb=screen.querySelector('.pf-vthumb');
                 const state={y:0,targetY:0,maxY:0,dragging:false,startY:0,startTy:0};
-                function recalc(){const W=screen.clientWidth,H=screen.clientHeight;const iw=img.naturalWidth||W,ih=img.naturalHeight||H;const scale=W/iw;state.maxY=Math.max(0,Math.round(ih*scale-H))}
+                function recalc(){
+                  const W=screen.clientWidth,H=screen.clientHeight;
+                  const iw=img.naturalWidth||W,ih=img.naturalHeight||H;
+                  const scale=W/iw;
+                  state.maxY=Math.max(0,Math.round(ih*scale-H))
+                }
                 img.complete?recalc():img.addEventListener('load',recalc,{once:true});
-                function applyY(){state.y+=(state.targetY-state.y)*0.1;if(img)img.style.setProperty('--y',`${-state.y}px`);if(vthumb)vthumb.style.transform=`translateY(${(state.y/state.maxY)*H*0.7}px)`}
-                (function loop(){applyY();requestAnimationFrame(loop)})();
+                function applyY(){
+                  state.y+=(state.targetY-state.y)*0.1;
+                  if(img)img.style.setProperty('--y',`${-state.y}px`);
+                  if(vthumb)vthumb.style.transform=`translateY(${(state.y/state.maxY)*H*0.7}px)`
+                }
+                (function loop(){
+                  applyY();
+                  requestAnimationFrame(loop)
+                })();
                 
-                screen.addEventListener('pointerdown',e=>{state.dragging=true;state.startY=e.clientY;state.startTy=state.targetY});
-                screen.addEventListener('pointermove',e=>{
-                    if(state.dragging){const dy=e.clientY-state.startY;state.targetY=Math.max(0,Math.min(state.maxY,state.startTy-dy))}
-                    const r=card.getBoundingClientRect();const x=(e.clientX-r.left)/r.width,y=(e.clientY-r.top)/r.height;
-                    card.style.setProperty('--ry',`${(x-0.5)*14}deg`); card.style.setProperty('--rx',`${(0.5-y)*14}deg`);
-                    card.style.setProperty('--mx',`${x*100}%`); card.style.setProperty('--my',`${y*100}%`);
+                screen.addEventListener('pointerdown',e=>{
+                  state.dragging=true;
+                  state.startY=e.clientY;
+                  state.startTy=state.targetY
                 });
-                screen.addEventListener('pointerleave',()=>{card.style.setProperty('--ry',`0deg`); card.style.setProperty('--rx',`0deg`);});
-                document.addEventListener('pointerup',()=>{state.dragging=false});
+                screen.addEventListener('pointermove',e=>{
+                    if(state.dragging){
+                      const dy=e.clientY-state.startY;
+                      state.targetY=Math.max(0,Math.min(state.maxY,state.startTy-dy))
+                    }
+                    const r=card.getBoundingClientRect();
+                    const x=(e.clientX-r.left)/r.width,y=(e.clientY-r.top)/r.height;
+                    card.style.setProperty('--ry',`${(x-0.5)*14}deg`);
+                    card.style.setProperty('--rx',`${(0.5-y)*14}deg`);
+                    card.style.setProperty('--mx',`${x*100}%`);
+                    card.style.setProperty('--my',`${y*100}%`);
+                });
+                screen.addEventListener('pointerleave',()=>{
+                  card.style.setProperty('--ry',`0deg`);
+                  card.style.setProperty('--rx',`0deg`);
+                });
+                document.addEventListener('pointerup',()=>{
+                  state.dragging=false
+                });
             });
         }
     });
